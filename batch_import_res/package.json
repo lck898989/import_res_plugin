@@ -1,0 +1,22 @@
+{
+  "name": "batch_import_res",
+  "version": "0.0.1",
+  "description": "The package template for getting started.",
+  "author": "Cocos Creator",
+  "main": "main.js",
+  "main-menu": {
+    "i18n:MAIN_MENU.package.title/batch_import_res/open": {
+      "message": "batch_import_res:open"
+    },
+    "i18n:MAIN_MENU.package.title/batch_import_res/hello": {
+      "message": "batch_import_res:say-hello"
+    }
+  },
+  "panel": {
+    "main": "panel/index.js",
+    "type": "dockable",
+    "title": "batch_import_res",
+    "width": 800,
+    "height": 600
+  }
+}

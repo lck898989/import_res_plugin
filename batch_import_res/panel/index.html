@@ -1,0 +1,46 @@
+<ui-box-container class="layout around-justified horizontal"><h2>批量导入资源文件</h2></ui-box-container>
+<hr />
+<div class="layout vertical around-justified">
+    <ui-box-container>
+        <div class="layout horizontal around-justified con">
+            
+            <div class="flex-2 spaceBt">
+                <div class="text">资源文件位置（支持多选）: </div>
+                <ui-input v-value="resPath" placeholder="选择文件位置" class="flex-1"></ui-input>
+            </div>
+            <div class="flex-1 btn">
+                <ui-button class="green" @confirm="openSrc">打开文件位置</ui-button>
+            </div>
+           
+        </div>
+
+        <div class="layout horizontal around-justified con">
+            
+            <div class="flex-2 spaceBt">
+                <div class="text">导入资源的位置: </div>
+                <ui-input v-value="targetPath" placeholder="选择导入文件夹" class="flex-1"></ui-input>
+            </div>
+            <div class="flex-1 btn">
+                <ui-button class="green" @confirm="openTarget">打开文件位置</ui-button>
+            </div>
+           
+        </div>
+        
+    </ui-box-container>
+</div>
+<div class="title">
+    <ui-button id="btn" class="green" @confirm="startImport">开始导入</ui-button>
+</div>
+
+<!-- <ui-section>
+    <div class="header">文件列表</div>
+    <div class="logCon layout horizontal around-justified">
+        <textarea class="area" v-model="file"></textarea>
+    </div>
+</ui-section> -->
+<ui-section>
+    <div class="header">输出日志</div>
+    <div class="logCon layout horizontal around-justified">
+        <textarea class="area" v-model="log" id="logTextArea"></textarea>
+    </div>
+</ui-section>

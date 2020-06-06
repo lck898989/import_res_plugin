@@ -1,0 +1,41 @@
+:host { margin: 5px; }
+h2 { color: #f90; }
+.title {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.spaceBt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.log {
+    margin-top: 20px;
+}
+.logCon {
+    height: 400px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #252525;
+}
+.area {
+    margin: 0px 0px 0px 0px;
+    color: #f90;
+    background-color: #252525;
+    outline: none;
+    width: 100%;
+}
+.btn {
+    margin-left: 15px;
+}
+.con {
+    /* margin-bottom: 20px; */
+    padding: 5px 5px 5px 5px;
+}
+.text {
+    width: 150px;
+}
